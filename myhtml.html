@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>唐诗</title>
+    <title>送你的诗</title>
     <style type="text/css ">
 
         body {
@@ -11,14 +11,60 @@
             height:100%;
         }
         html {
+
             height:100%;
         }
+        /*动画标签*/
         @keyframes myfirst {
-            from {opacity: 0}
-            to {opacity: 100}
+            0% {opacity: 100}
+            25% {opacity: 0}
+            50% {opacity: 0}
+            75% {opacity: 0}
+            100% {opacity: 0}
+        }
+
+        @keyframes mysecond {
+            0% {opacity: 0}
+            25% {opacity: 100}
+            50% {opacity: 0}
+            75% {opacity: 0}
+            100% {opacity: 0}
+        }
+        @keyframes mythird {
+            0% {opacity: 0}
+            25% {opacity: 0}
+            50% {opacity: 100}
+            75% {opacity: 0}
+            100% {opacity: 0}
+        }
+        @keyframes myfourth {
+            0% {opacity: 0}
+            25% {opacity: 0}
+            50% {opacity: 0}
+            75% {opacity: 100}
+            100% {opacity: 0}
         }
         h1,p {
-            animation: myfirst 2s infinite ;
+            font-size : 50px;
+            /*字号大小*/
+            position : absolute ;
+            width : 100%;
+            /*位置居中*/
+            text-align : center;
+            /*animation : myfirst 2s infinite;*/
+
+        }
+        #gai{
+            animation : myfirst 5s;
+        }
+        #hua{
+            animation: mysecond 5s;
+        }
+        #wu{
+            animation: mythird 5s;
+        }
+        #ai{
+            animation: myfourth 5s;
         }
     </style>
 
@@ -26,12 +72,20 @@
 <body>
 <!-- 导入图片<img src="wandw.jpg"> -->
 
-<audio src="你最珍贵.mp3 " controls="controls ">
+<audio src="你最珍贵.mp3" controls="controls" autoplay="autoplay"  loop="loop">
 </audio>
-<h1>藏头诗</h1>
-    <p>改革春风春满地；</p>
-    <p>华夏大地露新颜；</p>
-    <p>吾欲乘风逐壮志；</p>
-    <p>爱上层楼瞰河山；</p>
+<!--<audio 属性列表></audio>标签-->
+<!--br换行-->
+<!--<h1>标题标签</h1>-->
+<h1 style="color:#FF00FF">藏头诗</h1>
+<br><br><br><br><br>
+<!--段落标记中添加标签表示为 给段落指定名字-->
+    <p id="gai">改革春风春满地； </p>
+    <br><br><br><br><br>
+    <p id="hua">华夏大地露新颜； </p>
+    <br><br><br><br><br>
+    <p id="wu">吾欲乘风逐壮志； </p>
+    <br><br><br><br><br>
+    <p id="ai">爱上层楼瞰河山。 </p>
 </body>
 </html>
