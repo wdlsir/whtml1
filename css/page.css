@@ -1,0 +1,45 @@
+html,body,page {
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+page {font-size:180px;
+     height:100%;
+     position:absolute;
+     text-align:center;
+     padding-top:30%;
+ }
+#c {background-color:lightgreen;animation:season_c 10s infinite}
+#x {background-color:red;animation:season_x 10s infinite}
+#q {background-color:yellow;animation:season_q 10s infinite}
+#d {background-color:white;animation:season_d 10s infinite}
+@keyframes season {
+    0% {opacity:0}
+    100% {opacity:100}
+}
+@keyframes season_c {
+    0% {opacity:0 }
+    25% {opacity:100}
+    50% {opacity:0}
+    100% {opacity:0}
+}
+@keyframes season_x {
+    0% {opacity:0 }
+    25% {opacity:0}
+    50% {opacity:100}
+    100% {opacity:0}
+}
+@keyframes season_q {
+    0% {opacity:0 }
+    25% {opacity:0}
+    50% {opacity:0}
+    75% {opacity:100}
+    100% {opacity:0}
+}
+@keyframes season_d {
+    0% {opacity:0 }
+    25% {opacity:0}
+    50% {opacity:0}
+    75% {opacity:0}
+    100% {opacity:100}
+}
